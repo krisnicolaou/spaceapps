@@ -1,0 +1,191 @@
+/* primary, secondary, tertiary, quaternary, quinary */
+/* @group Shortcuts */
+
+.fl {float:left;}
+.fr {float:right;}
+.clr {clear:both;height:0;width:0;min-height:0;visibility:hidden;overflow:hidden;display:block;}
+.fc:after {content:".";display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+.dn {display:none !important;}
+
+/* @end */
+/* @group Tags */
+
+body{font-family:Arial, sans-serif; background:url('../img/space.jpg') 0 0 no-repeat; background-attachment:fixed;}
+p{}
+a{text-decoration:none;}
+a:hover{}
+strong{font-weight:bold}
+
+.kryp{font-family:'kryptonian', arial, sans-serif;}
+
+/* @end */
+/* @group Structure */
+
+.bg-layer1, .bg-layer2, .bg-layer3, .bg-layer4{position:absolute; top:0; left:0;}
+.bg-layer1{background:url('../img/stars.png') 0 0 fixed repeat;}
+.bg-layer2{background:url('../img/clouds.png') 0 0 fixed repeat;}
+.bg-layer3{background:url('../img/rocks.png') 0 0 fixed repeat;z-index:90;}
+
+.border_heliosheath{background:url('../img/border_heliosheath.png') 0 center no-repeat; width:365px; left:183590px;}
+.border_kuiper{background:url('../img/border_kuiper.png') 0 center no-repeat; width:365px; left:70629px;}
+.border_terminationshock{background:url('../img/border_terminationshock.png') 0 center no-repeat; width:367px; left:157389px;}
+
+.tile-wrapper{font-size:0; white-space:nowrap; position:relative;}
+.tile-group{position:relative; display:table; vertical-align: middle}
+.tile{width:1000px; height:600px; display:inline-block; font-size:16px; vertical-align:top;}
+.tile.warp{background:rgba(10,43,242, 0.2);}
+
+.voyager{width:400px; height:300px; position:fixed; top:50%; margin-top:-150px; left:0; margin-left:320px; z-index:100;}
+
+.next-tile{position:fixed; top:50%; margin-top:-177px; right:0; z-index:210;}
+.next-tile a:first-child,
+.next-tile a.fl,
+.next-tile a.fr{display:block;}
+.next-tile a.fl{position:relative; background:rgba(29,47,58, 1); padding:20px; border-radius:10px; top:103px; right:20px; opacity:0;}
+.next-tile a.fr{height:365px; width:113px; background:url('../img/next_img.png') 0 0 no-repeat; display:block;}
+.next-tile a span{display:block; text-align:right;}
+.next-tile a .instruction{font-family:'montserrat', arial, sans-serif; font-size:25px; color:#00d6b0; text-transform:uppercase;}
+.next-tile a .title{font-family:'montserratbold', arial, sans-serif; font-size:32px; color:#fff; text-transform:uppercase; padding:5px 0 7px;}
+.next-tile a .distance{font-family:'montserrat', arial, sans-serif; font-size:16px; color:#00d6b0;}
+
+.tile-group > div{display:table-cell; vertical-align:middle;position:absolute;}
+.tile-group.earth .tile-01{width:391px; left:0; background:url('../img/tiles-earth/tile_01.png') center no-repeat;}
+.tile-group.earth .tile-02{width:518px; left:700px; background:url('../img/tiles-earth/tile_02.png') center no-repeat;}
+.tile-group.earth .tile-03{width:6373px; left:1400px; background:url('../img/earth_info.png') center no-repeat;}
+
+.tile-group.jupiter .tile-01{width:8192px; left:300px; background:url('../img/jupiter_info.png') center no-repeat;}
+.tile-group.saturn .tile-01{width:8192px; left:0; background:url('../img/saturn_info.png') center no-repeat;}
+.tile-group.highway .tile-01{width:4848px; left:0; background:url('../img/themagnetichighway_info.png') center no-repeat;}
+.tile-group.family .tile-01{width:6423px; left:0; background:url('../img/family_portraits.png') center no-repeat;}
+.tile-group.shock .tile-01{width:4318px; left:0; background:url('../img/termination-shock.png') center no-repeat;}
+
+/* @end */
+/* @group Header */
+
+header{width:100%; height:100px; background:url('../img/header_gradient.png') 0 bottom repeat-x; position:fixed; top:0; left:0; font-size:18px; color:#fff; z-index:100; text-align:center;}
+
+header .center{color:white;font-size:24px; text-align:center; display:inline-block; overflow:hidden; padding-top:10px;}
+header .center h1{font-size:72px; color:#fff; font-family:'fairviewregular', arial, sans-serif; text-transform:uppercase; line-height:53px; margin-bottom:4px;}
+header .center h2{font-size:26px; color:#93b8d1; font-family:'montserrat', arial, sans-serif; text-transform:uppercase; display:inline-block; position:relative;}
+header .center h2:before,
+header .center h2:after{content: ""; position: absolute; height: 5px;border-top: 3px solid #93b8d1; top: 11px; width: 600px;}
+header .center h2:before{right: 100%; margin-right: 15px;}
+header .center h2:after{left: 100%; margin-left: 15px;}
+
+header .date{padding:16px 0 0 20px; text-align:left;}
+header .date .english{font-size:72px; font-family:'fairviewregular', arial, sans-serif; color:#00d6b0; line-height:53px; padding-bottom:5px;}
+header .date .kryp{font-size:15px; color:#00b5e2;}
+
+header .audio-battery-container {width:400px;}
+header .battery-container{display:inline-block;vertical-align:top;padding:20px 20px 0 0; text-align:left;}
+header .audio-controls {margin:36px 20px;vertical-align:top;display:inline-block;width:108px;height:19px;background:url('../img/audio_toggle.png') left top no-repeat;}
+header .audio-controls:hover {background-position:left bottom;}
+header .battery{width:131px; height:43px; background:url('../img/battery_shell.png') 0 0 no-repeat; padding:5px 0 0 5px; margin-bottom:7px;}
+header .battery .power-wrapper{width:119px; height:38px; background:url('../img/power_empty.png') 0 0 no-repeat;}
+header .battery .power{background:url('../img/power.gif') 0 0 no-repeat; height:38px; width:100%;}
+header .kryp{font-size:18px; color:#00b5e2;}
+
+footer .fl,
+header .fl,
+footer .fr,
+header .fr {position:absolute;top:0;}
+
+footer .fl,
+header .fl {left:0;} 
+footer .fr,
+header .fr {right:0;}
+
+/* @end */
+/* @group Header */
+
+footer{width:100%; height:120px; background:url('../img/footer_bg.png') 0 0 repeat-x; position:fixed; bottom:0; left:0; text-align:center; font-size:18px; color:#fff; z-index:100;}
+footer ul{margin:0 auto; font-size:0; display:inline-block;}
+footer ul li{display:inline-block; margin-left:10px;}
+footer ul li:first-child{margin-left:0;}
+footer ul li a{display:block;width:25px;height:25px;background:red;}
+
+footer .distance{text-align:left; padding:17px 0 0 17px;}
+footer .distance .title{font-size:15px; color:#00b5e2; font-family:'montserrat', arial, sans-serif;}
+footer .distance .au{font-size:72px; color:#00d6b0; font-family:'fairviewregular', arial, sans-serif; line-height:60px;}
+footer .distance .km{font-size:15px; color:#00b5e2; font-family:'montserrat', arial, sans-serif; text-transform:uppercase;}
+	
+footer .signal-exchange{text-align:right; padding:24px 20px 0 0;}
+footer .signal-exchange .title{font-size:15px; color:#00b5e2; font-family:'montserrat', arial, sans-serif;}
+footer .signal-exchange .signal{font-size:72px; color:#00d6b0; font-family:'fairviewregular', arial, sans-serif; line-height:60px;}
+
+footer .timeline-container{padding-top:30px; position:relative; margin:0 auto;}
+footer .timeline-container,
+footer .timeline-empty,
+footer .timeline-fill,
+footer .timeline-container .links{width:568px; height:59px;}
+footer .timeline-empty{background:url('../img/timeline_off.png') 0 0 no-repeat; position:relative;}
+footer .timeline-fill{background:url('../img/timeline_on.png') 0 0 no-repeat; width:auto;}
+footer .timeline-container .links{position:absolute; top:54px; left:-2px;}
+footer .timeline-container .links a{width:12px; height:12px; display:block; opacity:0.5; position:absolute; top:0;}
+footer .timeline-container .links a#earth{left:0}
+footer .timeline-container .links a#jupiter{left:16px}
+footer .timeline-container .links a#saturn{left:39px}
+footer .timeline-container .links a#family{left:130px}
+footer .timeline-container .links a#shock{left:349px}
+footer .timeline-container .links a#highway{left:408px}
+footer .timeline-container .links a#current{left:560px}
+
+/* @end */
+/* @group Fonts */
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fairviewregular';
+    src: url('../fonts/fairview_regular-webfont.eot');
+    src: url('../fonts/fairview_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fairview_regular-webfont.woff') format('woff'),
+         url('../fonts/fairview_regular-webfont.ttf') format('truetype'),
+         url('../fonts/fairview_regular-webfont.svg#fairviewregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fairviewsmall_caps';
+    src: url('../fonts/fairview_smallcaps-webfont.eot');
+    src: url('../fonts/fairview_smallcaps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fairview_smallcaps-webfont.woff') format('woff'),
+         url('../fonts/fairview_smallcaps-webfont.ttf') format('truetype'),
+         url('../fonts/fairview_smallcaps-webfont.svg#fairviewsmall_caps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kryptonian';
+    src: url('../fonts/kryptonian6.2.4-webfont.eot');
+    src: url('../fonts/kryptonian6.2.4-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kryptonian6.2.4-webfont.woff') format('woff'),
+         url('../fonts/kryptonian6.2.4-webfont.ttf') format('truetype'),
+         url('../fonts/kryptonian6.2.4-webfont.svg#kryptonian_6regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @end */
