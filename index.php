@@ -14,15 +14,6 @@
 		</a>
 		<a href="#" class="fr"></a>
 	</div>
-	<div class="dn testing">
-		<ul>
-			<li id="voy1_km"></li>
-			<li id="voy1_au"></li>
-			<li id="voy1_kms"></li>
-			<li id="voy1_aus"></li>
-			<li id="voy1_lt"></li>
-		</ul>
-	</div>
 	<div class="tile-wrapper">
 		<div class="earth tile-group">
 			<div class="border_heliosheath"></div>
@@ -48,7 +39,7 @@
 			<div class="tile-01"></div>
 		</div>
 		<div class="current tile-group">
-			<div class="tile">Test</div>
+			<div class="tile-01"></div>
 		</div>
 	</div>
 	<?php include('inc/footer.php'); ?>

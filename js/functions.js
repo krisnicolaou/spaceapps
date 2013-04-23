@@ -97,14 +97,18 @@ var currentKey = 'earth';
 var audioAutoPlay = true;
 
 // jQuery Functionality
-$(document).ready(function() {	
+$(document).ready(function() {
+	$('.overlay').height($(window).height()).width($(window).width()).delay(1000).fadeOut(500, function(){
+		$(this).remove();
+	});
+		
 	init();
 	changeWarp(next(steps, currentKey));
 	$('header .center h1').html(steps['earth'].heading);
 	$('header .center h2').html(steps['earth'].subheading);
 	$('.date .english').html(steps['earth'].date.year+'-'+months[(steps['earth'].date.month - 1)]);
 	$('.date .kryp').html(months[steps['earth'].date.month]);
-	setInterval('dist_controller()', 500);
+	// setInterval('dist_controller()', 500);
 	
 	$('.audio-controls').click(function() {
 		if(audioAutoPlay == true){

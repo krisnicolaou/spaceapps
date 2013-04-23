@@ -21,6 +21,7 @@ strong{font-weight:bold}
 /* @end */
 /* @group Structure */
 
+.overlay {background:#ebebeb;z-index:1000;position:absolute;top:0;left:0;}
 .bg-layer1, .bg-layer2, .bg-layer3, .bg-layer4{position:absolute; top:0; left:0;}
 .bg-layer1{background:url('../img/stars.png') 0 0 fixed repeat;}
 .bg-layer2{background:url('../img/clouds.png') 0 0 fixed repeat;}
@@ -55,9 +56,10 @@ strong{font-weight:bold}
 
 .tile-group.jupiter .tile-01{width:8192px; left:300px; background:url('../img/jupiter_info.png') center no-repeat;}
 .tile-group.saturn .tile-01{width:8192px; left:0; background:url('../img/saturn_info.png') center no-repeat;}
-.tile-group.highway .tile-01{width:4848px; left:0; background:url('../img/themagnetichighway_info.png') center no-repeat;}
-.tile-group.family .tile-01{width:6423px; left:0; background:url('../img/family_portraits.png') center no-repeat;}
-.tile-group.shock .tile-01{width:4318px; left:0; background:url('../img/termination-shock.png') center no-repeat;}
+.tile-group.highway .tile-01{width:5648px; left:0; background:url('../img/themagnetichighway_info.png') center no-repeat;}
+.tile-group.family .tile-01{width:7323px; left:0; background:url('../img/family_portraits.png') center no-repeat;}
+.tile-group.shock .tile-01{width:5118px; left:0; background:url('../img/termination-shock.png') center no-repeat;}
+.tile-group.current .tile-01{display:inline-block;width:1300px; left:0; background:url('../img/tiles-current/tile_01.png') center no-repeat;}
 
 /* @end */
 /* @group Header */
@@ -76,7 +78,7 @@ header .date{padding:16px 0 0 20px; text-align:left;}
 header .date .english{font-size:72px; font-family:'fairviewregular', arial, sans-serif; color:#00d6b0; line-height:53px; padding-bottom:5px;}
 header .date .kryp{font-size:15px; color:#00b5e2;}
 
-header .audio-battery-container {width:400px;}
+header .audio-battery-container {width:auto;}
 header .battery-container{display:inline-block;vertical-align:top;padding:20px 20px 0 0; text-align:left;}
 header .audio-controls {margin:36px 20px;vertical-align:top;display:inline-block;width:108px;height:19px;background:url('../img/audio_toggle.png') left top no-repeat;}
 header .audio-controls:hover {background-position:left bottom;}
